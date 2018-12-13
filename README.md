@@ -9,3 +9,7 @@ Starter projects for learning about Machine Learning.
 4. Decide on the type of output you are predicting 
 5. Based on type of output, pick an algorithm that will determine acorrelation between your 'feature' and 'label'
 6. Use model fenerated by algoritm to make a prediction
+
+Two differnt types of outputs used in this project
+1. Classification: the value of our labels belong to a discrete set
+2. Regression: the value of our labels belong to a continuous set
