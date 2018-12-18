@@ -13,3 +13,7 @@ Starter projects for learning about Machine Learning.
 Two differnt types of outputs used in this project
 1. Classification: the value of our labels belong to a discrete set
 2. Regression: the value of our labels belong to a continuous set
+
+What's the fastest way to learn machine learning?
+1. Master the fundmental operations around working with data.
+2. Strong knowledge of data handling basics makes applying any algorithm trivial.
