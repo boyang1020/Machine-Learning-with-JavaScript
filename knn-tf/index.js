@@ -1,3 +1,4 @@
+require('@tensorflow/tfjs-node');
 const tf = require('@tensorflow/tfjs');
 const loadCSV = require('./load-csv');
 
@@ -27,4 +28,5 @@ features = tf.tensor(features);
 labels = tf.tensor(labels);
 
 const result = knn(features, labels, tf.tensor(testFeatures[0]), 10);
-console.log('Guess', result, testLabels[0][0]);
+const err = (testLabels[0][0] - result) /testLabels[0][0] * 100;
+console.log('Guess', result, testLabels[0][0], err);
