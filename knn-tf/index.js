@@ -33,3 +33,4 @@ testFeatures.forEach((testPoint, i) => {
     console.log('Guess', result, testLabels[0][0], err); 
 });
 
+const { mean, variance } = tf.moments(numbers);
