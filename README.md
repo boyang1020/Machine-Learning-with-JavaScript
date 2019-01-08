@@ -17,3 +17,8 @@ Two differnt types of outputs used in this project
 What's the fastest way to learn machine learning?
 1. Master the fundmental operations around working with data.
 2. Strong knowledge of data handling basics makes applying any algorithm trivial.
+
+Pros and cons of linear regression
+1. Fast! Only train one time, then use for any prediction.
+2. Uses methods that will be very important in more complicated ML.
+3. Harder to understand intuitively.
