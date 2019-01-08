@@ -22,3 +22,10 @@ Pros and cons of linear regression
 1. Fast! Only train one time, then use for any prediction.
 2. Uses methods that will be very important in more complicated ML.
 3. Harder to understand intuitively.
+
+Methods of solving linear regression
+1. Ordinary least squares
+2. Generalized lease squares
+3. ...others
+4. Gradient Descent
+
