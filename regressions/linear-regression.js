@@ -5,7 +5,10 @@ class LinearRegression {
         this.features = features;
         this.labels = labels;
         
-        this.options = Object.assign({ learningRate: 0.1 }, options);
+        this.options = Object.assign({ learningRate: 0.1, iterations:  }, options);
+
+    }
+    train() {
 
     }
 }
