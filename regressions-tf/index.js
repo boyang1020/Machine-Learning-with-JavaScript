@@ -2,6 +2,7 @@ require('@tensorflow/tfjs-node');
 const tf = require('@tensorflow/tfjs');
 const loadCSV = require('./load-csv');
 const LinearRegression = require('./linear-regression');
+const plot = require('node-remote-plot');
 
 let { features, labels, testFeatures, testLabels } = loadCSV('./cars.csv', {
     shuffle: true,
@@ -20,9 +21,14 @@ regression.features.print();
 regression.train();
 const r2 = regression.test(testFeatures, testLabels);
 
+plot({
+    x: regression.mseHistory
+});
+
 console.log('Updated M is:', regression.weights.get(1,0), 
             'Updated B is:', regression.weights.get(0,0),
             );
 console.log('R2 is: ', r2);
 
 console.log('MSE history: ', regression.mseHistory);
+
