@@ -22,15 +22,12 @@ regression.train();
 const r2 = regression.test(testFeatures, testLabels);
 
 plot({
-    x: regression.mseHistory.reverse(),
-    xLabel: 'Iteration #',
+    x: regression.bHistory,
+    y: regression.mseHistory.reverse(),
+    xLabel: 'Value of B',
     yLabel: 'Mean Square Error'
 });
 
-console.log('Updated M is:', regression.weights.get(1,0), 
-            'Updated B is:', regression.weights.get(0,0),
-            );
-console.log('R2 is: ', r2);
 
-console.log('MSE history: ', regression.mseHistory);
+
 
