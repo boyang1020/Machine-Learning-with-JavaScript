@@ -32,4 +32,4 @@ plot({
 console.log('R2 is: ', r2);
 
 
-
+regression.predict([[200, 2, 400]]).print();
