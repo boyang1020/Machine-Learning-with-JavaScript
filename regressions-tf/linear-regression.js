@@ -25,7 +25,7 @@ class LinearRegression {
 	}
 
 	train() {
-		batchQuantity = Math.floor(this.features.shape[0] / this.options.batchSize);
+		const batchQuantity = Math.floor(this.features.shape[0] / this.options.batchSize);
 
 		for (let i = 0; i < this.options.iterations; i++) {
 			for(let j = 0; j < batchQuantity; j++) {
@@ -45,7 +45,6 @@ class LinearRegression {
 				this.gradientDescent(featureSlice, labelSlice);
 			}
 
-            this.gradientDescent();
             this.recordMSE();
             this.updateLearningRate();
 		}
