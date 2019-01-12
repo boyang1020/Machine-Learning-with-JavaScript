@@ -40,7 +40,8 @@ regression.weights.print();
 
 regression.train();
 
-regression.predict([
-  [215, 440, 2.16]
-]).print();
+// regression.predict([
+//   [215, 440, 2.16]
+// ]).print();
 
+console.log(regression.test(testFeatures, _.flatMap(testLabels)));
